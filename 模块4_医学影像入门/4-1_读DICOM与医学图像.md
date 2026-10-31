@@ -223,6 +223,16 @@ class SmallCNN(nn.Module):
         return self.classifier(self.features(x))
 
 
+# 通道和尺寸是怎么一步步变的（对应 3-4 第四、五节）：
+#   输入        (N, in_ch, 28, 28)
+#   Conv(·,16)  (N, 16, 28, 28)   ← padding=1，尺寸不变，通道 16
+#   Pool(2)     (N, 16, 14, 14)   ← 通道不变，尺寸减半
+#   Conv(16,32) (N, 32, 14, 14)   ← 通道从 16 变 32，尺寸不变
+#   Pool(2)     (N, 32,  7,  7)   ← 尺寸再减半
+#   Flatten     32 × 7 × 7 = 1568
+# 所以 Linear 的输入是 32*7*7。换数据集尺寸时，这个数要重算。
+
+
 model = SmallCNN(info['n_channels'], n_classes)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
