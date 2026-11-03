@@ -14,3 +14,6 @@ desktop.ini
 # 编辑器
 .idea/
 .vscode/
+
+# 数据集（体积大，本地自行下载）
+练习代码/data/
