@@ -258,11 +258,79 @@ for epoch in range(5):
 **这是你第一个医学影像模型。** 虽然是简化的数据集，但流程和真实项目完全一样。
 
 ```python
-# MedMNIST 自带专业评估器，能算 AUC 等指标
-from medmnist import Evaluator
+# MedMNIST 完整示例（包括设备、完整训练循环）
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torchvision import transforms
+from torch.utils.data import DataLoader
+import medmnist
+from medmnist import INFO, Evaluator
+
+# 1️⃣ 选数据集（这里用肺炎胸片）
+data_flag = 'pneumoniamnist'
+info = INFO[data_flag]
+DataClass = getattr(medmnist, info['python_class'])
+n_classes = len(info['label'])
+
+# 2️⃣ 数据转换 & 加载（download=True 会自动下载到 ~/.medmnist）
+transform = transforms.Compose([transforms.ToTensor()])
+train_set = DataClass(split='train', transform=transform, download=True)
+test_set  = DataClass(split='test',  transform=transform, download=True)
+
+train_loader = DataLoader(train_set, batch_size=64, shuffle=True)
+test_loader  = DataLoader(test_set,  batch_size=64, shuffle=False)
+
+# 3️⃣ 网络（复用 3‑4 的 CNN 思路）
+class SmallCNN(nn.Module):
+    def __init__(self, in_ch, n_cls):
+        super().__init__()
+        self.features = nn.Sequential(
+            nn.Conv2d(in_ch, 16, 3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
+            nn.Conv2d(16, 32, 3, padding=1), nn.ReLU(), nn.MaxPool2d(2),
+        )
+        self.classifier = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(32 * 7 * 7, 64), nn.ReLU(),
+            nn.Linear(64, n_cls),
+        )
+    def forward(self, x):
+        return self.classifier(self.features(x))
+
+# 4️⃣ 训练准备
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = SmallCNN(info['n_channels'], n_classes).to(device)
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=1e-3)
+
+# 5️⃣ 训练循环（5 epoch 演示）
+for epoch in range(5):
+    model.train()
+    for xb, yb in train_loader:
+        xb, yb = xb.to(device), yb.to(device)
+        optimizer.zero_grad()
+        loss = criterion(model(xb), yb.squeeze().long())
+        loss.backward()
+        optimizer.step()
+    # ---- 验证 ----
+    model.eval()
+    correct = total = 0
+    with torch.no_grad():
+        for xb, yb in test_loader:
+            xb, yb = xb.to(device), yb.to(device)
+            pred = model(xb).argmax(1)
+            correct += (pred == yb.squeeze().long()).sum().item()
+            total += yb.size(0)
+    print(f"Epoch {epoch+1:02d}  测试准确率 = {correct/total:.4f}")
+
+# 6️⃣ 额外评估（AUC 等指标）
+# MedMNIST 自带 Evaluator，可直接算出多个指标
 evaluator = Evaluator(data_flag, 'test')
-# 用法见 medmnist 官方文档
+# 这里的 evaluator 会在内部使用模型的预测，你可以自行调用 evaluate 方法（参考官方文档）
 ```
+
 
 ***
 
