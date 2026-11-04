@@ -122,7 +122,13 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-ds = pydicom.dcmread(r"E:\某病人CT\IM0001.dcm")
+# 注意：E:\某病人CT\IM0001.dcm 只是示意路径，你电脑上没有这个文件，
+# 直接照抄会 FileNotFoundError。pydicom 自带真实示例文件，先跑通它：
+from pydicom.data import get_testdata_file
+ds = pydicom.dcmread(get_testdata_file("CT_small.dcm"))
+
+# 以后拿到自己的 .dcm 文件时，换成这行（路径必须真实存在）：
+# ds = pydicom.dcmread(r"E:\某病人CT\IM0001.dcm")
 
 print("模态:", ds.Modality)
 print("图像尺寸:", ds.Rows, "x", ds.Columns)
@@ -154,14 +160,14 @@ AttributeError: 'FileDataset' object has no attribute 'SliceThickness'
 ```python
 pixels = ds.pixel_array
 
-print("形状:", pixels.shape)        # (512, 512)
+print("形状:", pixels.shape)        # (128, 128)；临床文件常见 (512, 512)
 print("数据类型:", pixels.dtype)     # uint16
 print("取值范围:", pixels.min(), "~", pixels.max())
 ```
 
 `pixel_array` 是 pydicom 帮你把文件里的二进制**解压、按位深还原**出来的 numpy 数组。
 
-**注意这里只有两个维度 `(512, 512)`——没有通道。** 因为 CT 是单通道灰度图。
+**注意这里只有两个维度 `(128, 128)`——没有通道。** 因为 CT 是单通道灰度图。（自带示例是 128×128；临床文件常见 512×512，维度结构完全一样）
 
 中间加一个通道就是 `(1, 512, 512)`，再加批就是 `(N, 1, 512, 512)`——跟你在 3-4 学的 NCHW 完全一致。
 
@@ -241,6 +247,8 @@ HU = (2μ水 - μ水) / μ水 × 1000 = +1000
 | 金属 | > 1000 | 远超上限，会有伪影 |
 
 **肝脏 40~70 这个数字要背下来。** 以后做肝脏分割、肝脏病灶检出，都靠这个窗口划范围。
+
+> 🖼 **这张表已做成图片**：`E:\AI学习\常用组织HU值速查表.png`——上半是九种组织排在同一根数轴上（负值 = 比水透，正值 = 比水挡），下半是带记忆要点的表格。复习时直接看图。
 
 ### 怎么算出来
 
