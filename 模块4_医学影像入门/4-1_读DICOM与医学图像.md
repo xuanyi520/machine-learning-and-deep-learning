@@ -24,7 +24,7 @@ pip install pydicom medmnist seaborn
 | 包 | 干什么 | 不装的后果 |
 |---|---|---|
 | `pydicom` | 读 .dcm 文件 | 4-1 的第一节就跑不了 |
-| `medmnist` | 医学图像练手数据集 | 没有 DICOM 文件就没法练习 |
+| `medmnist` | 医学图像练手数据集（自动下载，不需要 DICOM） | 4-1 第七节和 4-2 的练习没法跑 |
 | `seaborn` | 画混淆矩阵热图 | 4-2 评估那节报 ImportError |
 
 装完验一下：
@@ -179,9 +179,9 @@ plt.title('直接显示原始像素值')
 plt.show()
 ```
 
-你会看到偏暗、对比度很差的一张图。**原因有两个：**
+你会看到一张图。**但有两个问题：**
 
-1. 值域是 0~4095，imshow 按 0~255 理解，全被截到最亮
+1. imshow 默认把"这张图自己的最小值→黑、最大值→白"：图里最黑的不一定是空气，黑白没有物理意义
 2. **这个数字根本不是亮度，是 X 射线的衰减量**，得先换算成 HU 才有物理意义
 
 所以下一步必须换算。
@@ -294,7 +294,7 @@ print("换算前:", pixels.min(), "~", pixels.max())
 print("换算后:", hu.min(), "~", hu.max())
 ```
 
-**正确的结果应该是：换算后最小值接近 -1000（空气），最大值在 +1000 以上（骨）。**
+**正确的结果应该是：最小值是负的（空气/肺的方向），最大值在 +1000 以上（骨）。用自带的 CT_small.dcm 实测是 -896 ~ 1167，对得上。**
 
 如果换算后最小值还是 0，说明你漏了 intercept。这一步是最常见的错误。
 
@@ -435,7 +435,7 @@ plt.show()
 一张 CT 是 512×512 像素。**但"像素"不是真实尺寸**，得知道每个像素代表多少毫米。
 
 ```python
-print(ds.PixelSpacing)   # [0.7, 0.7]
+print(ds.PixelSpacing)   # CT_small.dcm 实测 ['0.661468', '0.661468']
 ```
 
 意思是：**每个像素 = 0.7 mm × 0.7 mm**。
@@ -445,6 +445,8 @@ print(ds.PixelSpacing)   # [0.7, 0.7]
 ```
 512 × 0.7 = 358.4 mm   ← 约 36 厘米，接近一个成年人的腹部宽度
 ```
+
+你现在跑的 CT_small.dcm 是 128×128、间距 0.661468 mm：`128 × 0.661468 ≈ 84.7 mm`。方法一样，数字不同而已。
 
 ### 顺序陷阱：是 [行, 列]，不是 [宽, 高]
 
@@ -517,7 +519,19 @@ Z 方向比 XY 方向粗 **7 倍**（5.0 / 0.7 ≈ 7.1）。
 
 ## 七、没有 DICOM 文件怎么办
 
-你手头大概率没有。三个办法，按推荐顺序：
+你手头大概率没有。四个办法，按推荐顺序：
+
+### 办法 0：pydicom 自带的示例文件（零下载，本讲前六节用的就是它）
+
+pydicom 安装时就自带十几张**真实的** DICOM 示例图，不用下载任何东西：
+
+```python
+from pydicom.data import get_testdata_file
+ds = pydicom.dcmread(get_testdata_file("CT_small.dcm"))   # 一张真实 CT
+```
+
+- 优点：零下载、任何电脑能跑，学读文件、学 HU 换算、学开窗都够用
+- 缺点：只是一张 128×128 的小图，**练流程可以，练项目不行**
 
 ### 办法 1：MedMNIST（推荐，先用这个）
 
@@ -637,6 +651,7 @@ class SmallCNN(nn.Module):
         return self.classifier(self.features(x))
 
 # ---------- 4. 训练准备 ----------
+torch.manual_seed(0)                    # 固定随机种子，结果可复现
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("使用设备:", device)
 
@@ -691,7 +706,7 @@ Epoch 5  验证准确率 = 0.9504
 
 **`torch.manual_seed(0)` 是什么？** 固定随机种子，让每次运行的初始化、打乱顺序都一样，结果可复现。**写实验报告时必须固定种子**，否则你今天的 94.47% 明天重跑就变 93%。
 
-把这一行加在 `model = SmallCNN(...)` 之前：
+上面完整代码已经加了这一行（在 `model = SmallCNN(...)` 之前）：
 
 ```python
 torch.manual_seed(0)                    # 固定随机种子，结果可复现
@@ -776,7 +791,7 @@ plt.show()
 | `RuntimeError: Expected target size` | 标签没 squeeze | `yb.squeeze().long()` |
 | `ImportError: seaborn` | 没装 | `pip install seaborn` |
 | 中文标题变方块 | 没设字体 | `plt.rcParams['font.sans-serif'] = ['SimHei']` |
-| MedMNIST 下载卡住 | 网络 | 挂代理，或设 `MEDMNIST_CACHE` 换目录 |
+| MedMNIST 下载卡住 | 网络 | 挂代理；目录用 `root=` 参数指定（见第七节。没有 `MEDMNIST_CACHE` 这个环境变量） |
 
 ***
 
@@ -784,7 +799,7 @@ plt.show()
 
 ### 练习 4-1-A（读文件）
 
-有 DICOM 就用自己的，没有就跳过这题（用 B 之后的所有题）。
+用 pydicom 自带的 CT_small.dcm 读（以后有自己的 DICOM，再换成自己的路径）。
 
 用 pydicom 读出来，打印：模态、尺寸、像素间距、层厚、位深、像素值范围。
 
@@ -794,7 +809,7 @@ plt.show()
 
 对读到的像素做 HU 换算，打印换算前后的范围。
 
-**验收**：换算后最小值接近 -1000。如果不是，回去看你漏了什么。
+**验收**：换算后最小值约 -896、最大值约 +1167（CT_small.dcm 实测）。对不上就是漏了 intercept。
 
 ### 练习 4-1-C（开窗对比）
 
