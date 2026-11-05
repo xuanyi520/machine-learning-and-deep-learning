@@ -1,0 +1,32 @@
+laterality train (6000, 28, 28) [3000 3000] test (9166, 28, 28) [4571 4595]
+--- B1 左右定位（二分类）---
+[左右定位] none       acc=0.9318 (6s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[左右定位] hflip      acc=0.9341 (6s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[左右定位] vflip      acc=0.6612 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[左右定位] safe       acc=0.9156 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[左右定位] safe+hflip acc=0.8962 (5s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+--- B2 器官识别（3 类，非定位）---
+[器官3类] none       acc=0.9687 (3s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[器官3类] hflip      acc=0.9571 (3s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[器官3类] vflip      acc=0.9753 (6s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[器官3类] safe       acc=0.9046 (9s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+--- B3 皮肤病灶 7 类 ---
+[皮肤病灶] none       acc=0.7212 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[皮肤病灶] safe       acc=0.7401 (6s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[皮肤病灶] safe+hflip acc=0.7147 (10s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[皮肤病灶] safe+vflip acc=0.7242 (9s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json
+[皮肤病灶] color      acc=0.7451 (3s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\b_augment.json

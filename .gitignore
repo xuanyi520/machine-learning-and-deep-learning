@@ -17,3 +17,19 @@ desktop.ini
 
 # 数据集（体积大，本地自行下载）
 练习代码/data/
+
+# 讲义生成的大文件（模型权重、数据集、预测结果）
+模块11_医学图像分割/outputs/*.npz
+模块11_医学图像分割/outputs/*.pt
+模块11_医学图像分割/outputs/*.pth
+模块*_*/*/outputs/*.npz
+模块*_*/*/outputs/*.pt
+模块*_*/*/outputs/*.pth
+模块*_*/*/_exp/results/*.json
+模块*_*/*/*.onnx
+
+# 模块15 的演示仓库（嵌套 git，不纳入主仓库）
+模块15_工程化与部署/git_demo/
+模块15_工程化与部署/dvc_demo/
+模块*_*/code/outputs/
+模块*_*/code/*.onnx

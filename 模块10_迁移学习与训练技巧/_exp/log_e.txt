@@ -1,0 +1,12 @@
+1 基线 从头训+常数LR                    acc=0.7971 macroF1=0.7823 (7s)
+2 +安全增强                          acc=0.6916 macroF1=0.6482 (4s)
+3 +Cosine+warmup                 acc=0.8214 macroF1=0.7912 (4s)
+4 +预训练(差分LR)                     acc=0.7132 macroF1=0.6642 (4s)
+5 +LabelSmoothing                acc=0.7015 macroF1=0.6497 (4s)
+6 +TTA                           acc=0.7182 macroF1=0.6667 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\e_ablation.json
+seed0                            acc=0.7170 macroF1=0.6702 (4s)
+seed1                            acc=0.7065 macroF1=0.6565 (4s)
+seed2                            acc=0.7194 macroF1=0.6759 (4s)
+3 seeds [0.7170417904853821, 0.7065185904502869, 0.7193803191184998] mean 0.7143 std 0.0056
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\e_seeds.json

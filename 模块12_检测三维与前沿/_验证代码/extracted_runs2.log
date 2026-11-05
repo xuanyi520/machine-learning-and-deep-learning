@@ -1,0 +1,110 @@
+
+===== BLOCK 0 =====
+保留: ['A', 'C', 'E']
+thr=0.30 保留 3 个: ['A', 'C', 'E']
+thr=0.50 保留 3 个: ['A', 'C', 'E']
+thr=0.70 保留 3 个: ['A', 'C', 'E']
+thr=0.80 保留 4 个: ['A', 'C', 'E', 'F']
+thr=0.85 保留 6 个: ['A', 'B', 'C', 'D', 'E', 'F']
+OK 0.1s
+
+===== BLOCK 1 =====
+0.6666666666666666
+OK 0.0s
+
+===== BLOCK 2 =====
+FP/scan<=0.125 sensitivity=0.600 @thr=0.54 (actual FP/scan=0.12)
+FP/scan<=0.25  sensitivity=0.850 @thr=0.47 (actual FP/scan=0.25)
+FP/scan<=0.5   sensitivity=0.950 @thr=0.39 (actual FP/scan=0.47)
+FP/scan<=1.0   sensitivity=0.950 @thr=0.22 (actual FP/scan=1.00)
+FP/scan<=2.0   sensitivity=1.000 @thr=0.01 (actual FP/scan=1.40)
+OK 0.0s
+
+===== BLOCK 3 =====
+0 2.547 {'loss_classifier': 0.676, 'loss_box_reg': 1.857, 'loss_objectness': 0.009, 'loss_rpn_box_reg': 0.004}
+10 1.865 {'loss_classifier': 0.127, 'loss_box_reg': 1.732, 'loss_objectness': 0.005, 'loss_rpn_box_reg': 0.001}
+20 0.789 {'loss_classifier': 0.041, 'loss_box_reg': 0.747, 'loss_objectness': 0.001, 'loss_rpn_box_reg': 0.0}
+30 0.275 {'loss_classifier': 0.075, 'loss_box_reg': 0.199, 'loss_objectness': 0.001, 'loss_rpn_box_reg': 0.0}
+torch.Size([1, 4]) tensor([0.9706], device='cuda:0') tensor([1], device='cuda:0')
+OK 11.0s
+
+===== BLOCK 4 =====
+FAIL 0.1s RuntimeError Exception thrown in SimpleITK ImageFileReader_Execute: D:\a\SimpleITK\SimpleITK\Code\IO\src\sitkImageReaderBase.cxx:91:
+sitk::ERROR: The file "path\to\1.3.6.1.4.1.14519.5.2.1.6279.6001.xxx.mhd" does not exist.
+
+===== BLOCK 5 =====
+18496
+55360
+3D 18.2 ms, 0.95 GB
+OK 0.3s
+
+===== BLOCK 6 =====
+before (64, 64, 10) (0.7, 0.7, 5.0)
+after  (45, 45, 50) (1.0, 1.0, 1.0)
+OK 0.0s
+
+===== BLOCK 7 =====
+torch.Size([1, 2])
+58306
+OK 0.2s
+
+===== BLOCK 8 =====
+参数量 86.6M
+Conv2d(3, 768, kernel_size=(16, 16), stride=(16, 16))
+torch.Size([1, 768, 14, 14]) torch.Size([1, 768, 196])
+224px patch16: 14x14 = 196 tokens
+224px patch8: 28x28 = 784 tokens
+512px patch16: 32x32 = 1024 tokens
+512px patch32: 16x16 = 256 tokens
+96px patch16: 6x6 = 36 tokens
+OK 0.9s
+
+===== BLOCK 9 =====
+scores
+ [[0.707 0.    0.707]
+ [0.    0.707 0.707]
+ [0.707 0.707 1.414]]
+attention
+ [[0.401 0.198 0.401]
+ [0.198 0.401 0.401]
+ [0.248 0.248 0.503]]
+row sums [1. 1. 1.]
+output
+ [[0.802 0.599]
+ [0.599 0.802]
+ [0.752 0.752]]
+tensor([[0.4010, 0.1980, 0.4010],
+        [0.1980, 0.4010, 0.4010],
+        [0.2480, 0.2480, 0.5030]], dtype=torch.float64)
+OK 0.0s
+
+===== BLOCK 10 =====
+test acc 0.7447
+params 105099
+OK 6.7s
+
+===== BLOCK 11 =====
+params 15.70M
+64 (1, 2, 64, 64, 64) 34.3 ms peak 0.51 GB
+96 (1, 2, 96, 96, 96) 93.3 ms peak 1.25 GB
+OK 6.7s
+
+===== BLOCK 12 =====
+tensor(2.8961)
+tensor(2.7081)
+tensor(0.0912)
+OK 0.0s
+
+===== BLOCK 13 =====
+torch.Size([1, 11, 28, 28])
+tensor(1.)
+OK 0.0s
+
+===== BLOCK 14 =====
+image  acc 0.6140  AUC 0.9513
+early  acc 0.5200  AUC 0.9294
+late   acc 0.6350  AUC 0.9577
+OK 2.5s
+
+===== BLOCK 15 =====
+OK 0.0s

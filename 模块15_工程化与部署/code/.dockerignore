@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+data/
+*.pth
+*.pt
+!best.onnx
+.git/
+.gitignore
+tests/

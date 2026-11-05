@@ -1,0 +1,36 @@
+=== n=200 ===
+  scratch      acc=0.3610  trainable=11,180,616  3s
+  head_only    acc=0.2175  trainable=    4,104  0s
+  partial_l4   acc=0.3823  trainable=8,397,832  0s
+  full_diff    acc=0.3350  trainable=11,180,616  0s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json
+=== n=496 ===
+  scratch      acc=0.4993  trainable=11,180,616  1s
+  head_only    acc=0.4803  trainable=    4,104  0s
+  partial_l4   acc=0.6855  trainable=8,397,832  0s
+  full_diff    acc=0.6668  trainable=11,180,616  1s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json
+=== n=1000 ===
+  scratch      acc=0.6381  trainable=11,180,616  2s
+  head_only    acc=0.6007  trainable=    4,104  1s
+  partial_l4   acc=0.7486  trainable=8,397,832  1s
+  full_diff    acc=0.7545  trainable=11,180,616  2s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json
+=== n=2000 ===
+  scratch      acc=0.5563  trainable=11,180,616  5s
+  head_only    acc=0.6676  trainable=    4,104  3s
+  partial_l4   acc=0.7939  trainable=8,397,832  7s
+  full_diff    acc=0.8053  trainable=11,180,616  16s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json
+=== n=5000 ===
+  scratch      acc=0.6384  trainable=11,180,616  19s
+  head_only    acc=0.7153  trainable=    4,104  8s
+  partial_l4   acc=0.8176  trainable=8,397,832  10s
+  full_diff    acc=0.8530  trainable=11,180,616  12s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json
+=== n=11959 ===
+  scratch      acc=0.8351  trainable=11,180,616  26s
+  head_only    acc=0.7360  trainable=    4,104  16s
+  partial_l4   acc=0.8609  trainable=8,397,832  17s
+  full_diff    acc=0.8878  trainable=11,180,616  23s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a2_sweep.json

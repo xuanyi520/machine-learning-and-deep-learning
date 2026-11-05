@@ -1,0 +1,13 @@
+=== C1 ResNet18 @128x128, batch=128 ===
+fp32        63.39 ms/iter  peak  2580.0 MB     2019 img/s
+amp_fp16    36.77 ms/iter  peak   883.5 MB     3481 img/s
+amp_bf16    41.97 ms/iter  peak   689.5 MB     3050 img/s
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_amp.json
+
+=== C2 最大可用 batch @128x128 ===
+  fp32 bs=64: peak 1867 MB, 34.1 ms
+  fp32 bs=128: peak 1104 MB, 64.4 ms
+  fp32 bs=256: peak 4013 MB, 142.8 ms
+  fp32 bs=384: peak 5445 MB, 194.8 ms
+  fp32 bs=512: peak 6877 MB, 265.0 ms
+  fp32 bs=768: peak 6765 MB, 685.3 ms

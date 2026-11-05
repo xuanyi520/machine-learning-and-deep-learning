@@ -1,0 +1,17 @@
+{
+  "fp32": {
+    "ms_per_iter": 63.39,
+    "peak_MB": 2580.0,
+    "img_per_s": 2019.4
+  },
+  "amp_fp16": {
+    "ms_per_iter": 36.77,
+    "peak_MB": 883.5,
+    "img_per_s": 3480.8
+  },
+  "amp_bf16": {
+    "ms_per_iter": 41.97,
+    "peak_MB": 689.5,
+    "img_per_s": 3049.6
+  }
+}

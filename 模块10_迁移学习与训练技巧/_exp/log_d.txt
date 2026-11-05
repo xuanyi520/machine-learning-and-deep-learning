@@ -1,0 +1,18 @@
+train [ 228  359  769   80  779 4693   99] test [  66  103  220   23  223 1341   29]
+weights [4.39, 2.79, 1.3, 12.51, 1.28, 0.21, 10.11]
+CE             acc=0.7282 macroF1=0.4961 balAcc=0.5101 rec3=0.17 rec6=0.59 (9s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+CE+LS0.1       acc=0.7506 macroF1=0.4866 balAcc=0.4543 rec3=0.13 rec6=0.41 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+CE+weight      acc=0.5955 macroF1=0.4288 balAcc=0.5556 rec3=0.35 rec6=0.79 (3s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+Focal g=1      acc=0.7357 macroF1=0.5141 balAcc=0.5150 rec3=0.17 rec6=0.62 (3s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+Focal g=2      acc=0.7397 macroF1=0.4971 balAcc=0.5015 rec3=0.13 rec6=0.59 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+Focal g=3      acc=0.7456 macroF1=0.4843 balAcc=0.4926 rec3=0.09 rec6=0.66 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+Focal g=2+w    acc=0.5796 macroF1=0.4253 balAcc=0.5677 rec3=0.43 rec6=0.72 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json
+Focal g=2+LS   acc=0.7377 macroF1=0.4878 balAcc=0.4785 rec3=0.09 rec6=0.52 (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\d_loss.json

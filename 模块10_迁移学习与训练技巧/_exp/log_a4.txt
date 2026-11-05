@@ -1,0 +1,24 @@
+=== n=496 ===
+  scratch      acc=0.7445
+  head_only    acc=0.5037
+  partial_l4   acc=0.6878
+  full_diff    acc=0.6752
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a4_sweep15.json
+=== n=1000 ===
+  scratch      acc=0.8068
+  head_only    acc=0.6060
+  partial_l4   acc=0.7518
+  full_diff    acc=0.7463
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a4_sweep15.json
+=== n=2000 ===
+  scratch      acc=0.8527
+  head_only    acc=0.6609
+  partial_l4   acc=0.7925
+  full_diff    acc=0.7995
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a4_sweep15.json
+=== n=5000 ===
+  scratch      acc=0.9030
+  head_only    acc=0.7115
+  partial_l4   acc=0.8305
+  full_diff    acc=0.8530
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a4_sweep15.json

@@ -1,0 +1,43 @@
+device: cuda NVIDIA GeForce RTX 5060 Laptop GPU
+params: 7.762531 M
+ep   1 loss 1.4241 liver 0.6563 tumor 0.0000 acc 0.8267 *best
+ep   2 loss 1.0885 liver 0.9101 tumor 0.0000 acc 0.9681 *best
+ep   3 loss 0.9266 liver 0.9257 tumor 0.0000 acc 0.9748 *best
+ep   4 loss 0.8291 liver 0.8796 tumor 0.2188 acc 0.9550 *best
+ep   5 loss 0.7449 liver 0.9257 tumor 0.4117 acc 0.9748 *best
+ep   6 loss 0.6560 liver 0.9415 tumor 0.3852 acc 0.9801
+ep   7 loss 0.6045 liver 0.9580 tumor 0.4849 acc 0.9850 *best
+ep   8 loss 0.5419 liver 0.9461 tumor 0.4641 acc 0.9798
+ep   9 loss 0.4932 liver 0.9549 tumor 0.4895 acc 0.9843 *best
+ep  10 loss 0.4452 liver 0.8360 tumor 0.1070 acc 0.8931
+ep  11 loss 0.4036 liver 0.9631 tumor 0.5571 acc 0.9877 *best
+ep  12 loss 0.3684 liver 0.9590 tumor 0.5027 acc 0.9865
+ep  13 loss 0.3705 liver 0.9617 tumor 0.5918 acc 0.9867 *best
+ep  14 loss 0.3420 liver 0.9679 tumor 0.5996 acc 0.9891 *best
+ep  15 loss 0.3403 liver 0.9322 tumor 0.5506 acc 0.9744
+ep  16 loss 0.3238 liver 0.9365 tumor 0.3139 acc 0.9738
+ep  17 loss 0.3000 liver 0.9510 tumor 0.4624 acc 0.9834
+ep  18 loss 0.2993 liver 0.9395 tumor 0.5816 acc 0.9773
+ep  19 loss 0.2866 liver 0.9466 tumor 0.3952 acc 0.9775
+ep  20 loss 0.2811 liver 0.9742 tumor 0.5896 acc 0.9911
+ep  21 loss 0.2760 liver 0.9604 tumor 0.4760 acc 0.9853
+ep  22 loss 0.2703 liver 0.9380 tumor 0.4177 acc 0.9796
+ep  23 loss 0.2647 liver 0.9736 tumor 0.6133 acc 0.9906 *best
+ep  24 loss 0.2530 liver 0.9753 tumor 0.6357 acc 0.9915 *best
+ep  25 loss 0.2531 liver 0.9761 tumor 0.6597 acc 0.9917 *best
+ep  26 loss 0.2454 liver 0.9765 tumor 0.6481 acc 0.9919
+ep  27 loss 0.2400 liver 0.9771 tumor 0.6387 acc 0.9921
+ep  28 loss 0.2351 liver 0.9780 tumor 0.6468 acc 0.9925
+ep  29 loss 0.2300 liver 0.9787 tumor 0.6697 acc 0.9927 *best
+ep  30 loss 0.2296 liver 0.9788 tumor 0.6760 acc 0.9927 *best
+ep  31 loss 0.2268 liver 0.9788 tumor 0.6734 acc 0.9927
+ep  32 loss 0.2200 liver 0.9785 tumor 0.6701 acc 0.9926
+ep  33 loss 0.2176 liver 0.9795 tumor 0.6761 acc 0.9929 *best
+ep  34 loss 0.2150 liver 0.9794 tumor 0.6800 acc 0.9929 *best
+ep  35 loss 0.2111 liver 0.9799 tumor 0.6869 acc 0.9931 *best
+ep  36 loss 0.2114 liver 0.9800 tumor 0.6883 acc 0.9931 *best
+ep  37 loss 0.2063 liver 0.9797 tumor 0.6916 acc 0.9930 *best
+ep  38 loss 0.2085 liver 0.9800 tumor 0.6885 acc 0.9931
+ep  39 loss 0.2100 liver 0.9800 tumor 0.6912 acc 0.9931
+ep  40 loss 0.2086 liver 0.9798 tumor 0.6915 acc 0.9931
+done in 587.6s, best score 0.8357

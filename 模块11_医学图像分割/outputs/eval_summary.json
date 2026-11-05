@@ -1,0 +1,1851 @@
+{
+  "test_best": {
+    "liver_dice": 0.98213338484429,
+    "tumor_dice": 0.7110246098626316,
+    "hd95": 12.58395848057699,
+    "assd": 6.319470521313407,
+    "pixel_acc": 0.9937777709960938,
+    "n": 100,
+    "n_tumor": 83
+  },
+  "test_best_pp": {
+    "liver_dice": 0.9821402625342244,
+    "tumor_dice": 0.7102025740419812,
+    "hd95": 8.72406553818833,
+    "assd": 3.9931321007859135,
+    "pixel_acc": 0.9937846374511718,
+    "n": 100,
+    "n_tumor": 83
+  },
+  "test_weak": {
+    "liver_dice": 0.9574694875586115,
+    "tumor_dice": 0.291822990519875,
+    "hd95": 16.051762719736928,
+    "assd": 9.662148140698676,
+    "pixel_acc": 0.9850054931640625,
+    "n": 100,
+    "n_tumor": 83
+  },
+  "test_weak_pp": {
+    "liver_dice": 0.9574340408900881,
+    "tumor_dice": 0.27577230659811486,
+    "hd95": 10.172573892227101,
+    "assd": 4.982739591187326,
+    "pixel_acc": 0.9849974060058594,
+    "n": 100,
+    "n_tumor": 83
+  },
+  "per_case": [
+    {
+      "i": 0,
+      "liver_dice": 0.9841129032258065,
+      "tumor_dice": 0.9395973154362416,
+      "hd95": 1.0,
+      "assd": 0.4862944311172692,
+      "pixel_acc": 0.993988037109375,
+      "has_tumor": true
+    },
+    {
+      "i": 1,
+      "liver_dice": 0.978957682079037,
+      "tumor_dice": 0.9575233981281498,
+      "hd95": 2.0,
+      "assd": 0.6776221769532444,
+      "pixel_acc": 0.992767333984375,
+      "has_tumor": true
+    },
+    {
+      "i": 2,
+      "liver_dice": 0.988338592399506,
+      "tumor_dice": 0.9137254901960784,
+      "hd95": 1.4142135623730951,
+      "assd": 0.7473838659745948,
+      "pixel_acc": 0.9960174560546875,
+      "has_tumor": true
+    },
+    {
+      "i": 3,
+      "liver_dice": 0.9882271468144044,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99481201171875,
+      "has_tumor": false
+    },
+    {
+      "i": 4,
+      "liver_dice": 0.9610552108857724,
+      "tumor_dice": 0.9549878345498783,
+      "hd95": 2.0,
+      "assd": 0.7070637238176345,
+      "pixel_acc": 0.9886016845703125,
+      "has_tumor": true
+    },
+    {
+      "i": 5,
+      "liver_dice": 0.9861013986013986,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.995147705078125,
+      "has_tumor": false
+    },
+    {
+      "i": 6,
+      "liver_dice": 0.9863170988422161,
+      "tumor_dice": 0.8326947637292464,
+      "hd95": 3.605551275463989,
+      "assd": 1.3041027793709268,
+      "pixel_acc": 0.995635986328125,
+      "has_tumor": true
+    },
+    {
+      "i": 7,
+      "liver_dice": 0.9811082555570585,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9936065673828125,
+      "has_tumor": false
+    },
+    {
+      "i": 8,
+      "liver_dice": 0.9933297628901115,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9979095458984375,
+      "has_tumor": false
+    },
+    {
+      "i": 9,
+      "liver_dice": 0.9904683723263557,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99609375,
+      "has_tumor": false
+    },
+    {
+      "i": 10,
+      "liver_dice": 0.9872035794183445,
+      "tumor_dice": 0.9440298507462687,
+      "hd95": 2.0,
+      "assd": 0.7648759418314649,
+      "pixel_acc": 0.995635986328125,
+      "has_tumor": true
+    },
+    {
+      "i": 11,
+      "liver_dice": 0.9910670381904606,
+      "tumor_dice": 0.8656716417910447,
+      "hd95": 2.0,
+      "assd": 0.8327728378575867,
+      "pixel_acc": 0.9964447021484375,
+      "has_tumor": true
+    },
+    {
+      "i": 12,
+      "liver_dice": 0.9896096602078068,
+      "tumor_dice": 0.9067796610169492,
+      "hd95": 1.0,
+      "assd": 0.5820335388238347,
+      "pixel_acc": 0.996612548828125,
+      "has_tumor": true
+    },
+    {
+      "i": 13,
+      "liver_dice": 0.9885709718670077,
+      "tumor_dice": 0.7741935483870968,
+      "hd95": 2.1770509831248424,
+      "assd": 1.020670535209101,
+      "pixel_acc": 0.995635986328125,
+      "has_tumor": true
+    },
+    {
+      "i": 14,
+      "liver_dice": 0.989252814738997,
+      "tumor_dice": 0.8296943231441049,
+      "hd95": 2.0,
+      "assd": 1.0342732079177803,
+      "pixel_acc": 0.99615478515625,
+      "has_tumor": true
+    },
+    {
+      "i": 15,
+      "liver_dice": 0.982215468024808,
+      "tumor_dice": 0.9383333333333334,
+      "hd95": 2.354539806949063,
+      "assd": 0.855992489284264,
+      "pixel_acc": 0.9933929443359375,
+      "has_tumor": true
+    },
+    {
+      "i": 16,
+      "liver_dice": 0.984181240063593,
+      "tumor_dice": 0.7,
+      "hd95": 3.361750787051402,
+      "assd": 1.4739337066980356,
+      "pixel_acc": 0.993927001953125,
+      "has_tumor": true
+    },
+    {
+      "i": 17,
+      "liver_dice": 0.9869692785640317,
+      "tumor_dice": 0.8514056224899599,
+      "hd95": 1.824264068711926,
+      "assd": 0.919615993712396,
+      "pixel_acc": 0.9952850341796875,
+      "has_tumor": true
+    },
+    {
+      "i": 18,
+      "liver_dice": 0.9874411302982732,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99517822265625,
+      "has_tumor": true
+    },
+    {
+      "i": 19,
+      "liver_dice": 0.9907870009625521,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9969329833984375,
+      "has_tumor": false
+    },
+    {
+      "i": 20,
+      "liver_dice": 0.9802725626608215,
+      "tumor_dice": 0.8375870069605569,
+      "hd95": 59.93041918636365,
+      "assd": 7.77730140549823,
+      "pixel_acc": 0.99334716796875,
+      "has_tumor": true
+    },
+    {
+      "i": 21,
+      "liver_dice": 0.9713104379377268,
+      "tumor_dice": 0.9628099173553719,
+      "hd95": 1.4142135623730951,
+      "assd": 0.5743462189216165,
+      "pixel_acc": 0.9896240234375,
+      "has_tumor": true
+    },
+    {
+      "i": 22,
+      "liver_dice": 0.985957194822773,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.994903564453125,
+      "has_tumor": true
+    },
+    {
+      "i": 23,
+      "liver_dice": 0.9872706522693354,
+      "tumor_dice": 0.0,
+      "hd95": 112.5571534123516,
+      "assd": 106.47009907312032,
+      "pixel_acc": 0.995452880859375,
+      "has_tumor": true
+    },
+    {
+      "i": 24,
+      "liver_dice": 0.9839231598952181,
+      "tumor_dice": 0.8618421052631579,
+      "hd95": 2.0,
+      "assd": 0.9752284749830793,
+      "pixel_acc": 0.9952239990234375,
+      "has_tumor": true
+    },
+    {
+      "i": 25,
+      "liver_dice": 0.990036753310012,
+      "tumor_dice": 0.8380952380952381,
+      "hd95": 2.8284271247461903,
+      "assd": 1.2868502655301512,
+      "pixel_acc": 0.99652099609375,
+      "has_tumor": true
+    },
+    {
+      "i": 26,
+      "liver_dice": 0.9828924082225349,
+      "tumor_dice": 0.9084745762711864,
+      "hd95": 2.0,
+      "assd": 0.6319071980453557,
+      "pixel_acc": 0.9942474365234375,
+      "has_tumor": true
+    },
+    {
+      "i": 27,
+      "liver_dice": 0.9828611056072915,
+      "tumor_dice": 0.0,
+      "hd95": 86.2762983454391,
+      "assd": 51.72213601061326,
+      "pixel_acc": 0.9938812255859375,
+      "has_tumor": true
+    },
+    {
+      "i": 28,
+      "liver_dice": 0.9834147199859223,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9941558837890625,
+      "has_tumor": true
+    },
+    {
+      "i": 29,
+      "liver_dice": 0.9836382020406287,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99456787109375,
+      "has_tumor": true
+    },
+    {
+      "i": 30,
+      "liver_dice": 0.9927959109751681,
+      "tumor_dice": 0.881578947368421,
+      "hd95": 2.0,
+      "assd": 0.7839617945713214,
+      "pixel_acc": 0.9972686767578125,
+      "has_tumor": true
+    },
+    {
+      "i": 31,
+      "liver_dice": 0.9920588631163354,
+      "tumor_dice": 0.9439655172413793,
+      "hd95": 1.0,
+      "assd": 0.5034571276289073,
+      "pixel_acc": 0.9972991943359375,
+      "has_tumor": true
+    },
+    {
+      "i": 32,
+      "liver_dice": 0.9890188467235304,
+      "tumor_dice": 0.9757694826457105,
+      "hd95": 1.0,
+      "assd": 0.41379310344827586,
+      "pixel_acc": 0.9967193603515625,
+      "has_tumor": true
+    },
+    {
+      "i": 33,
+      "liver_dice": 0.9833047407841332,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9939117431640625,
+      "has_tumor": false
+    },
+    {
+      "i": 34,
+      "liver_dice": 0.9909739146132323,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9969482421875,
+      "has_tumor": false
+    },
+    {
+      "i": 35,
+      "liver_dice": 0.9823415077953765,
+      "tumor_dice": 0.8988095238095238,
+      "hd95": 1.0,
+      "assd": 0.7880052731450147,
+      "pixel_acc": 0.9934844970703125,
+      "has_tumor": true
+    },
+    {
+      "i": 36,
+      "liver_dice": 0.9863393021967879,
+      "tumor_dice": 0.7872860635696821,
+      "hd95": 4.0,
+      "assd": 1.627981218147781,
+      "pixel_acc": 0.9954071044921875,
+      "has_tumor": true
+    },
+    {
+      "i": 37,
+      "liver_dice": 0.9767791011910719,
+      "tumor_dice": 0.39009287925696595,
+      "hd95": 27.737967669249027,
+      "assd": 10.280180607564716,
+      "pixel_acc": 0.992919921875,
+      "has_tumor": true
+    },
+    {
+      "i": 38,
+      "liver_dice": 0.9850249584026622,
+      "tumor_dice": 0.8,
+      "hd95": 3.0,
+      "assd": 1.398354709073241,
+      "pixel_acc": 0.9940948486328125,
+      "has_tumor": true
+    },
+    {
+      "i": 39,
+      "liver_dice": 0.9855755321347386,
+      "tumor_dice": 0.8690807799442897,
+      "hd95": 2.8284271247461903,
+      "assd": 0.9382199034664391,
+      "pixel_acc": 0.994171142578125,
+      "has_tumor": true
+    },
+    {
+      "i": 40,
+      "liver_dice": 0.9793286068164346,
+      "tumor_dice": 0.8989247311827957,
+      "hd95": 2.0944271909999137,
+      "assd": 0.8125281311650451,
+      "pixel_acc": 0.992401123046875,
+      "has_tumor": true
+    },
+    {
+      "i": 41,
+      "liver_dice": 0.9800054566005378,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9921722412109375,
+      "has_tumor": true
+    },
+    {
+      "i": 42,
+      "liver_dice": 0.9798543797739759,
+      "tumor_dice": 0.888,
+      "hd95": 1.4142135623730951,
+      "assd": 0.6602369447261456,
+      "pixel_acc": 0.9931182861328125,
+      "has_tumor": true
+    },
+    {
+      "i": 43,
+      "liver_dice": 0.9841472303206997,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99468994140625,
+      "has_tumor": false
+    },
+    {
+      "i": 44,
+      "liver_dice": 0.9715320312800956,
+      "tumor_dice": 0.724669603524229,
+      "hd95": 39.026268896907155,
+      "assd": 8.000034783157169,
+      "pixel_acc": 0.9882049560546875,
+      "has_tumor": true
+    },
+    {
+      "i": 45,
+      "liver_dice": 0.9690246608072361,
+      "tumor_dice": 0.0,
+      "hd95": 83.27239583757344,
+      "assd": 72.89735818832499,
+      "pixel_acc": 0.9886932373046875,
+      "has_tumor": true
+    },
+    {
+      "i": 46,
+      "liver_dice": 0.9796303281780461,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.993408203125,
+      "has_tumor": false
+    },
+    {
+      "i": 47,
+      "liver_dice": 0.9246231155778895,
+      "tumor_dice": 0.5067750677506775,
+      "hd95": 68.11019057326075,
+      "assd": 25.31043127764543,
+      "pixel_acc": 0.9736785888671875,
+      "has_tumor": true
+    },
+    {
+      "i": 48,
+      "liver_dice": 0.9818556516285113,
+      "tumor_dice": 0.6768377253814147,
+      "hd95": 12.105391879221926,
+      "assd": 3.292693823076965,
+      "pixel_acc": 0.9935302734375,
+      "has_tumor": true
+    },
+    {
+      "i": 49,
+      "liver_dice": 0.9844640082858622,
+      "tumor_dice": 0.8931451612903226,
+      "hd95": 3.0,
+      "assd": 1.296554789840282,
+      "pixel_acc": 0.99542236328125,
+      "has_tumor": true
+    },
+    {
+      "i": 50,
+      "liver_dice": 0.9892055462716228,
+      "tumor_dice": 0.8752834467120182,
+      "hd95": 2.8284271247461903,
+      "assd": 0.9719443098669833,
+      "pixel_acc": 0.9963531494140625,
+      "has_tumor": true
+    },
+    {
+      "i": 51,
+      "liver_dice": 0.9679294823705926,
+      "tumor_dice": 0.9155555555555556,
+      "hd95": 1.0,
+      "assd": 0.4974004109810029,
+      "pixel_acc": 0.98956298828125,
+      "has_tumor": true
+    },
+    {
+      "i": 52,
+      "liver_dice": 0.9790281329923274,
+      "tumor_dice": 0.8090737240075614,
+      "hd95": 3.0,
+      "assd": 1.654137875893181,
+      "pixel_acc": 0.9918212890625,
+      "has_tumor": true
+    },
+    {
+      "i": 53,
+      "liver_dice": 0.9843124626213369,
+      "tumor_dice": 0.8617363344051447,
+      "hd95": 2.0590169943749475,
+      "assd": 0.9639207948550517,
+      "pixel_acc": 0.9947967529296875,
+      "has_tumor": true
+    },
+    {
+      "i": 54,
+      "liver_dice": 0.9713895127428962,
+      "tumor_dice": 0.0,
+      "hd95": 78.68587386567329,
+      "assd": 72.44536114986148,
+      "pixel_acc": 0.991058349609375,
+      "has_tumor": true
+    },
+    {
+      "i": 55,
+      "liver_dice": 0.9794032932992772,
+      "tumor_dice": 0.828752642706131,
+      "hd95": 4.0,
+      "assd": 1.4087100300969393,
+      "pixel_acc": 0.9942169189453125,
+      "has_tumor": true
+    },
+    {
+      "i": 56,
+      "liver_dice": 0.9863065445273397,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.995574951171875,
+      "has_tumor": false
+    },
+    {
+      "i": 57,
+      "liver_dice": 0.9726824899238692,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.990692138671875,
+      "has_tumor": true
+    },
+    {
+      "i": 58,
+      "liver_dice": 0.9840822651077616,
+      "tumor_dice": 0.9603024574669187,
+      "hd95": 1.0,
+      "assd": 0.42,
+      "pixel_acc": 0.9948272705078125,
+      "has_tumor": true
+    },
+    {
+      "i": 59,
+      "liver_dice": 0.9854161630811377,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.994476318359375,
+      "has_tumor": true
+    },
+    {
+      "i": 60,
+      "liver_dice": 0.989852305837436,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.996917724609375,
+      "has_tumor": false
+    },
+    {
+      "i": 61,
+      "liver_dice": 0.9798295676647643,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99212646484375,
+      "has_tumor": false
+    },
+    {
+      "i": 62,
+      "liver_dice": 0.9892809096037842,
+      "tumor_dice": 0.8814589665653495,
+      "hd95": 3.0,
+      "assd": 0.8985906722714115,
+      "pixel_acc": 0.9962310791015625,
+      "has_tumor": true
+    },
+    {
+      "i": 63,
+      "liver_dice": 0.9851540732731734,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9945526123046875,
+      "has_tumor": false
+    },
+    {
+      "i": 64,
+      "liver_dice": 0.9804525843092365,
+      "tumor_dice": 0.0,
+      "hd95": 29.154759474226502,
+      "assd": 20.521856367956925,
+      "pixel_acc": 0.9931182861328125,
+      "has_tumor": true
+    },
+    {
+      "i": 65,
+      "liver_dice": 0.9774762039393082,
+      "tumor_dice": 0.762589928057554,
+      "hd95": 2.8284271247461903,
+      "assd": 1.1143409394521613,
+      "pixel_acc": 0.992706298828125,
+      "has_tumor": true
+    },
+    {
+      "i": 66,
+      "liver_dice": 0.9261607491221225,
+      "tumor_dice": 0.9732465654374548,
+      "hd95": 1.0,
+      "assd": 0.4235294117647059,
+      "pixel_acc": 0.976898193359375,
+      "has_tumor": true
+    },
+    {
+      "i": 67,
+      "liver_dice": 0.9777777777777777,
+      "tumor_dice": 0.848381601362862,
+      "hd95": 2.8284271247461903,
+      "assd": 1.3535438389236116,
+      "pixel_acc": 0.99200439453125,
+      "has_tumor": true
+    },
+    {
+      "i": 68,
+      "liver_dice": 0.97467999626273,
+      "tumor_dice": 0.7022900763358778,
+      "hd95": 2.8284271247461903,
+      "assd": 1.2648234569544299,
+      "pixel_acc": 0.991729736328125,
+      "has_tumor": true
+    },
+    {
+      "i": 69,
+      "liver_dice": 0.9880184331797235,
+      "tumor_dice": 0.8879668049792531,
+      "hd95": 2.23606797749979,
+      "assd": 0.9314686640224451,
+      "pixel_acc": 0.9961700439453125,
+      "has_tumor": true
+    },
+    {
+      "i": 70,
+      "liver_dice": 0.9909637288278065,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9967193603515625,
+      "has_tumor": false
+    },
+    {
+      "i": 71,
+      "liver_dice": 0.9741941015089163,
+      "tumor_dice": 0.8739495798319328,
+      "hd95": 1.4142135623730951,
+      "assd": 0.7755819408784723,
+      "pixel_acc": 0.990814208984375,
+      "has_tumor": true
+    },
+    {
+      "i": 72,
+      "liver_dice": 0.9855553307707869,
+      "tumor_dice": 0.9272030651340997,
+      "hd95": 1.0,
+      "assd": 0.5121827518345028,
+      "pixel_acc": 0.9945526123046875,
+      "has_tumor": true
+    },
+    {
+      "i": 73,
+      "liver_dice": 0.9790551645665642,
+      "tumor_dice": 0.8430769230769231,
+      "hd95": 80.74708182000735,
+      "assd": 13.309636739713952,
+      "pixel_acc": 0.992156982421875,
+      "has_tumor": true
+    },
+    {
+      "i": 74,
+      "liver_dice": 0.980779138429834,
+      "tumor_dice": 0.9347826086956522,
+      "hd95": 1.0,
+      "assd": 0.5336717514850737,
+      "pixel_acc": 0.9925994873046875,
+      "has_tumor": true
+    },
+    {
+      "i": 75,
+      "liver_dice": 0.989442925817702,
+      "tumor_dice": 0.9602233077459874,
+      "hd95": 2.0,
+      "assd": 0.6105822933719018,
+      "pixel_acc": 0.99658203125,
+      "has_tumor": true
+    },
+    {
+      "i": 76,
+      "liver_dice": 0.9903099083369707,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.996612548828125,
+      "has_tumor": false
+    },
+    {
+      "i": 77,
+      "liver_dice": 0.9857594936708861,
+      "tumor_dice": 0.9090909090909091,
+      "hd95": 1.4142135623730951,
+      "assd": 0.6225487960392732,
+      "pixel_acc": 0.995330810546875,
+      "has_tumor": true
+    },
+    {
+      "i": 78,
+      "liver_dice": 0.9855059126673722,
+      "tumor_dice": 0.7857142857142857,
+      "hd95": 2.931370849898475,
+      "assd": 1.3355318818122024,
+      "pixel_acc": 0.9951934814453125,
+      "has_tumor": true
+    },
+    {
+      "i": 79,
+      "liver_dice": 0.9895871728713601,
+      "tumor_dice": 0.8869047619047619,
+      "hd95": 2.0,
+      "assd": 0.8144615177315163,
+      "pixel_acc": 0.9962921142578125,
+      "has_tumor": true
+    },
+    {
+      "i": 80,
+      "liver_dice": 0.9741269492642214,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9903564453125,
+      "has_tumor": true
+    },
+    {
+      "i": 81,
+      "liver_dice": 0.985543369890329,
+      "tumor_dice": 0.7906976744186046,
+      "hd95": 2.23606797749979,
+      "assd": 1.2433893164764112,
+      "pixel_acc": 0.99468994140625,
+      "has_tumor": true
+    },
+    {
+      "i": 82,
+      "liver_dice": 0.9910100029544591,
+      "tumor_dice": 0.8150943396226416,
+      "hd95": 2.0,
+      "assd": 1.1276928569337328,
+      "pixel_acc": 0.9965972900390625,
+      "has_tumor": true
+    },
+    {
+      "i": 83,
+      "liver_dice": 0.9726430976430976,
+      "tumor_dice": 0.8020969855832241,
+      "hd95": 7.972960819811614,
+      "assd": 2.120201325015119,
+      "pixel_acc": 0.9899749755859375,
+      "has_tumor": true
+    },
+    {
+      "i": 84,
+      "liver_dice": 0.9818018646856459,
+      "tumor_dice": 0.9092741935483871,
+      "hd95": 2.23606797749979,
+      "assd": 1.102108804016662,
+      "pixel_acc": 0.9944305419921875,
+      "has_tumor": true
+    },
+    {
+      "i": 85,
+      "liver_dice": 0.9700049026162143,
+      "tumor_dice": 0.823943661971831,
+      "hd95": 53.12246987549745,
+      "assd": 11.935645693731766,
+      "pixel_acc": 0.9897308349609375,
+      "has_tumor": true
+    },
+    {
+      "i": 86,
+      "liver_dice": 0.98,
+      "tumor_dice": 0.9836065573770492,
+      "hd95": 1.0,
+      "assd": 0.1650485436893204,
+      "pixel_acc": 0.99285888671875,
+      "has_tumor": true
+    },
+    {
+      "i": 87,
+      "liver_dice": 0.9788804071246819,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.992401123046875,
+      "has_tumor": true
+    },
+    {
+      "i": 88,
+      "liver_dice": 0.9864057672502574,
+      "tumor_dice": 0.896551724137931,
+      "hd95": 1.0,
+      "assd": 0.4883720930232558,
+      "pixel_acc": 0.9959716796875,
+      "has_tumor": true
+    },
+    {
+      "i": 89,
+      "liver_dice": 0.9917516716286788,
+      "tumor_dice": 0.8373493975903614,
+      "hd95": 2.0,
+      "assd": 1.123363891110633,
+      "pixel_acc": 0.9974212646484375,
+      "has_tumor": true
+    },
+    {
+      "i": 90,
+      "liver_dice": 0.9868566623888126,
+      "tumor_dice": 0.9387755102040817,
+      "hd95": 1.4142135623730951,
+      "assd": 0.5718397566661327,
+      "pixel_acc": 0.9954681396484375,
+      "has_tumor": true
+    },
+    {
+      "i": 91,
+      "liver_dice": 0.9842040312628548,
+      "tumor_dice": 0.9464831804281345,
+      "hd95": 2.0,
+      "assd": 0.7504339850971851,
+      "pixel_acc": 0.9936981201171875,
+      "has_tumor": true
+    },
+    {
+      "i": 92,
+      "liver_dice": 0.9846617837139164,
+      "tumor_dice": 0.8536155202821869,
+      "hd95": 2.23606797749979,
+      "assd": 0.9746037239539392,
+      "pixel_acc": 0.99456787109375,
+      "has_tumor": true
+    },
+    {
+      "i": 93,
+      "liver_dice": 0.976063829787234,
+      "tumor_dice": 0.5352112676056338,
+      "hd95": 4.64924225024706,
+      "assd": 2.139707276255591,
+      "pixel_acc": 0.9923095703125,
+      "has_tumor": true
+    },
+    {
+      "i": 94,
+      "liver_dice": 0.9725736605247516,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.990142822265625,
+      "has_tumor": false
+    },
+    {
+      "i": 95,
+      "liver_dice": 0.9785245354400801,
+      "tumor_dice": 0.8811881188118812,
+      "hd95": 68.82029769007825,
+      "assd": 6.371418811723183,
+      "pixel_acc": 0.991119384765625,
+      "has_tumor": true
+    },
+    {
+      "i": 96,
+      "liver_dice": 0.9910781659194815,
+      "tumor_dice": 0.8925233644859814,
+      "hd95": 2.0,
+      "assd": 0.8672374397172211,
+      "pixel_acc": 0.9969329833984375,
+      "has_tumor": true
+    },
+    {
+      "i": 97,
+      "liver_dice": 0.9911032832046245,
+      "tumor_dice": 0.8051948051948052,
+      "hd95": 2.23606797749979,
+      "assd": 2.437216541307573,
+      "pixel_acc": 0.9969940185546875,
+      "has_tumor": true
+    },
+    {
+      "i": 98,
+      "liver_dice": 0.9822359617957828,
+      "tumor_dice": 0.9567567567567568,
+      "hd95": 1.0,
+      "assd": 0.6165043289670222,
+      "pixel_acc": 0.9941253662109375,
+      "has_tumor": true
+    },
+    {
+      "i": 99,
+      "liver_dice": 0.9887072160453455,
+      "tumor_dice": 0.9667149059334298,
+      "hd95": 1.0,
+      "assd": 0.3739130434782609,
+      "pixel_acc": 0.9960479736328125,
+      "has_tumor": true
+    }
+  ],
+  "per_case_weak": [
+    {
+      "i": 0,
+      "liver_dice": 0.9659756290552303,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98687744140625,
+      "has_tumor": true
+    },
+    {
+      "i": 1,
+      "liver_dice": 0.9607003520791703,
+      "tumor_dice": 0.8892561983471075,
+      "hd95": 4.0,
+      "assd": 1.47336978548558,
+      "pixel_acc": 0.985626220703125,
+      "has_tumor": true
+    },
+    {
+      "i": 2,
+      "liver_dice": 0.9723387168733827,
+      "tumor_dice": 0.6202898550724638,
+      "hd95": 7.0710678118654755,
+      "assd": 2.7940877512921065,
+      "pixel_acc": 0.990509033203125,
+      "has_tumor": true
+    },
+    {
+      "i": 3,
+      "liver_dice": 0.9633914086195952,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.984161376953125,
+      "has_tumor": false
+    },
+    {
+      "i": 4,
+      "liver_dice": 0.8880611090154659,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.963775634765625,
+      "has_tumor": true
+    },
+    {
+      "i": 5,
+      "liver_dice": 0.9471577602725144,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9810638427734375,
+      "has_tumor": false
+    },
+    {
+      "i": 6,
+      "liver_dice": 0.957761102458823,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9863433837890625,
+      "has_tumor": true
+    },
+    {
+      "i": 7,
+      "liver_dice": 0.9657976137870083,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9876251220703125,
+      "has_tumor": false
+    },
+    {
+      "i": 8,
+      "liver_dice": 0.982950116913484,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.994659423828125,
+      "has_tumor": false
+    },
+    {
+      "i": 9,
+      "liver_dice": 0.9586856516976999,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9856109619140625,
+      "has_tumor": false
+    },
+    {
+      "i": 10,
+      "liver_dice": 0.9514689314498657,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98291015625,
+      "has_tumor": true
+    },
+    {
+      "i": 11,
+      "liver_dice": 0.9795670153247386,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.991302490234375,
+      "has_tumor": true
+    },
+    {
+      "i": 12,
+      "liver_dice": 0.9727772685609533,
+      "tumor_dice": 0.24806201550387597,
+      "hd95": 5.0,
+      "assd": 3.5869531692105303,
+      "pixel_acc": 0.990936279296875,
+      "has_tumor": true
+    },
+    {
+      "i": 13,
+      "liver_dice": 0.972171122157423,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9891510009765625,
+      "has_tumor": true
+    },
+    {
+      "i": 14,
+      "liver_dice": 0.9818600879252208,
+      "tumor_dice": 0.7469879518072289,
+      "hd95": 3.1622776601683795,
+      "assd": 1.2000039072197806,
+      "pixel_acc": 0.993011474609375,
+      "has_tumor": true
+    },
+    {
+      "i": 15,
+      "liver_dice": 0.9474863016438028,
+      "tumor_dice": 0.06462035541195477,
+      "hd95": 17.56248829948228,
+      "assd": 9.261412085234227,
+      "pixel_acc": 0.9799652099609375,
+      "has_tumor": true
+    },
+    {
+      "i": 16,
+      "liver_dice": 0.9617869094871196,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.985015869140625,
+      "has_tumor": true
+    },
+    {
+      "i": 17,
+      "liver_dice": 0.9818906654226218,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9934844970703125,
+      "has_tumor": true
+    },
+    {
+      "i": 18,
+      "liver_dice": 0.9765755969371573,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9920806884765625,
+      "has_tumor": true
+    },
+    {
+      "i": 19,
+      "liver_dice": 0.9648835516739447,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98822021484375,
+      "has_tumor": false
+    },
+    {
+      "i": 20,
+      "liver_dice": 0.9290587238596335,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9757232666015625,
+      "has_tumor": true
+    },
+    {
+      "i": 21,
+      "liver_dice": 0.941460113357584,
+      "tumor_dice": 0.5294725956566702,
+      "hd95": 14.244215601469232,
+      "assd": 5.752757631267213,
+      "pixel_acc": 0.9788818359375,
+      "has_tumor": true
+    },
+    {
+      "i": 22,
+      "liver_dice": 0.9587069178251213,
+      "tumor_dice": 0.0,
+      "hd95": 87.6091943704847,
+      "assd": 78.59406342082652,
+      "pixel_acc": 0.984466552734375,
+      "has_tumor": true
+    },
+    {
+      "i": 23,
+      "liver_dice": 0.9734163624651063,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9905548095703125,
+      "has_tumor": true
+    },
+    {
+      "i": 24,
+      "liver_dice": 0.9706406146644279,
+      "tumor_dice": 0.7374301675977654,
+      "hd95": 4.123105625617661,
+      "assd": 1.9800028066930806,
+      "pixel_acc": 0.9911956787109375,
+      "has_tumor": true
+    },
+    {
+      "i": 25,
+      "liver_dice": 0.9670899424403533,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9885711669921875,
+      "has_tumor": true
+    },
+    {
+      "i": 26,
+      "liver_dice": 0.9582966742917474,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98553466796875,
+      "has_tumor": true
+    },
+    {
+      "i": 27,
+      "liver_dice": 0.9795240189610517,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99322509765625,
+      "has_tumor": true
+    },
+    {
+      "i": 28,
+      "liver_dice": 0.9716800278842802,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.989990234375,
+      "has_tumor": true
+    },
+    {
+      "i": 29,
+      "liver_dice": 0.9736543780891489,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9911346435546875,
+      "has_tumor": true
+    },
+    {
+      "i": 30,
+      "liver_dice": 0.9673895836631312,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9874267578125,
+      "has_tumor": true
+    },
+    {
+      "i": 31,
+      "liver_dice": 0.9657746222464956,
+      "tumor_dice": 0.9111617312072893,
+      "hd95": 1.4142135623730951,
+      "assd": 0.7279408994399689,
+      "pixel_acc": 0.988525390625,
+      "has_tumor": true
+    },
+    {
+      "i": 32,
+      "liver_dice": 0.9234046769718589,
+      "tumor_dice": 0.3051224944320713,
+      "hd95": 19.407432650083784,
+      "assd": 8.781255682601179,
+      "pixel_acc": 0.976409912109375,
+      "has_tumor": true
+    },
+    {
+      "i": 33,
+      "liver_dice": 0.9621019890316772,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.985870361328125,
+      "has_tumor": false
+    },
+    {
+      "i": 34,
+      "liver_dice": 0.9737406216505895,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.99102783203125,
+      "has_tumor": false
+    },
+    {
+      "i": 35,
+      "liver_dice": 0.9740148136023243,
+      "tumor_dice": 0.8242424242424242,
+      "hd95": 2.23606797749979,
+      "assd": 1.2412936192911215,
+      "pixel_acc": 0.9903106689453125,
+      "has_tumor": true
+    },
+    {
+      "i": 36,
+      "liver_dice": 0.957632398753894,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9854736328125,
+      "has_tumor": true
+    },
+    {
+      "i": 37,
+      "liver_dice": 0.9468799845328435,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9832305908203125,
+      "has_tumor": true
+    },
+    {
+      "i": 38,
+      "liver_dice": 0.9721518987341772,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.988922119140625,
+      "has_tumor": true
+    },
+    {
+      "i": 39,
+      "liver_dice": 0.9009090909090909,
+      "tumor_dice": 0.3350253807106599,
+      "hd95": 7.0990747596779755,
+      "assd": 3.7894950625499826,
+      "pixel_acc": 0.96478271484375,
+      "has_tumor": true
+    },
+    {
+      "i": 40,
+      "liver_dice": 0.952914603422813,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.97991943359375,
+      "has_tumor": true
+    },
+    {
+      "i": 41,
+      "liver_dice": 0.9609806085448526,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.984893798828125,
+      "has_tumor": true
+    },
+    {
+      "i": 42,
+      "liver_dice": 0.9605009220740233,
+      "tumor_dice": 0.9,
+      "hd95": 1.3520815280171286,
+      "assd": 0.5883883476483185,
+      "pixel_acc": 0.9859466552734375,
+      "has_tumor": true
+    },
+    {
+      "i": 43,
+      "liver_dice": 0.969553758065982,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.989776611328125,
+      "has_tumor": false
+    },
+    {
+      "i": 44,
+      "liver_dice": 0.9459115617410078,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9769744873046875,
+      "has_tumor": true
+    },
+    {
+      "i": 45,
+      "liver_dice": 0.9427011709797058,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9790191650390625,
+      "has_tumor": true
+    },
+    {
+      "i": 46,
+      "liver_dice": 0.9269168777342851,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9757843017578125,
+      "has_tumor": false
+    },
+    {
+      "i": 47,
+      "liver_dice": 0.9359726723307349,
+      "tumor_dice": 0.8815165876777251,
+      "hd95": 2.0,
+      "assd": 0.9382942451741785,
+      "pixel_acc": 0.977691650390625,
+      "has_tumor": true
+    },
+    {
+      "i": 48,
+      "liver_dice": 0.9366388804906491,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9776153564453125,
+      "has_tumor": true
+    },
+    {
+      "i": 49,
+      "liver_dice": 0.9315455875182838,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.97857666015625,
+      "has_tumor": true
+    },
+    {
+      "i": 50,
+      "liver_dice": 0.9667575411133585,
+      "tumor_dice": 0.5524475524475524,
+      "hd95": 4.683281572999744,
+      "assd": 2.9429275295274375,
+      "pixel_acc": 0.98846435546875,
+      "has_tumor": true
+    },
+    {
+      "i": 51,
+      "liver_dice": 0.9630815596157468,
+      "tumor_dice": 0.7533333333333333,
+      "hd95": 4.123105625617661,
+      "assd": 1.6538954273738125,
+      "pixel_acc": 0.988037109375,
+      "has_tumor": true
+    },
+    {
+      "i": 52,
+      "liver_dice": 0.9685666550102965,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.987640380859375,
+      "has_tumor": true
+    },
+    {
+      "i": 53,
+      "liver_dice": 0.955625,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.984832763671875,
+      "has_tumor": true
+    },
+    {
+      "i": 54,
+      "liver_dice": 0.9544874521480221,
+      "tumor_dice": 0.0,
+      "hd95": 62.0,
+      "assd": 55.52585492026745,
+      "pixel_acc": 0.98284912109375,
+      "has_tumor": true
+    },
+    {
+      "i": 55,
+      "liver_dice": 0.9710888948932721,
+      "tumor_dice": 0.8982035928143712,
+      "hd95": 2.23606797749979,
+      "assd": 0.8580775688546848,
+      "pixel_acc": 0.9918365478515625,
+      "has_tumor": true
+    },
+    {
+      "i": 56,
+      "liver_dice": 0.9473921471397015,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9821929931640625,
+      "has_tumor": false
+    },
+    {
+      "i": 57,
+      "liver_dice": 0.9658241367034532,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98828125,
+      "has_tumor": true
+    },
+    {
+      "i": 58,
+      "liver_dice": 0.9772898605352431,
+      "tumor_dice": 0.9445506692160612,
+      "hd95": 1.0,
+      "assd": 0.5555555555555556,
+      "pixel_acc": 0.992645263671875,
+      "has_tumor": true
+    },
+    {
+      "i": 59,
+      "liver_dice": 0.9675130105661568,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9874267578125,
+      "has_tumor": true
+    },
+    {
+      "i": 60,
+      "liver_dice": 0.9435626947974107,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9820404052734375,
+      "has_tumor": false
+    },
+    {
+      "i": 61,
+      "liver_dice": 0.9613639054422037,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9850616455078125,
+      "has_tumor": false
+    },
+    {
+      "i": 62,
+      "liver_dice": 0.9722339082877577,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98992919921875,
+      "has_tumor": true
+    },
+    {
+      "i": 63,
+      "liver_dice": 0.9725240672643887,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9898529052734375,
+      "has_tumor": false
+    },
+    {
+      "i": 64,
+      "liver_dice": 0.975609756097561,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9912567138671875,
+      "has_tumor": true
+    },
+    {
+      "i": 65,
+      "liver_dice": 0.9509986805587152,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9835662841796875,
+      "has_tumor": true
+    },
+    {
+      "i": 66,
+      "liver_dice": 0.8949285514149622,
+      "tumor_dice": 0.8525423728813559,
+      "hd95": 3.605551275463989,
+      "assd": 1.9123717401417282,
+      "pixel_acc": 0.965667724609375,
+      "has_tumor": true
+    },
+    {
+      "i": 67,
+      "liver_dice": 0.9513523325467417,
+      "tumor_dice": 0.281786941580756,
+      "hd95": 8.326402247190515,
+      "assd": 5.1876998950898585,
+      "pixel_acc": 0.9825439453125,
+      "has_tumor": true
+    },
+    {
+      "i": 68,
+      "liver_dice": 0.9194254685584166,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.971923828125,
+      "has_tumor": true
+    },
+    {
+      "i": 69,
+      "liver_dice": 0.9479031960096065,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98272705078125,
+      "has_tumor": true
+    },
+    {
+      "i": 70,
+      "liver_dice": 0.9765919542610929,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9913787841796875,
+      "has_tumor": false
+    },
+    {
+      "i": 71,
+      "liver_dice": 0.9669120758229669,
+      "tumor_dice": 0.5644171779141104,
+      "hd95": 4.123105625617661,
+      "assd": 2.1017414398642917,
+      "pixel_acc": 0.988067626953125,
+      "has_tumor": true
+    },
+    {
+      "i": 72,
+      "liver_dice": 0.9747905993331707,
+      "tumor_dice": 0.8646288209606987,
+      "hd95": 2.0,
+      "assd": 0.8330266952966369,
+      "pixel_acc": 0.99053955078125,
+      "has_tumor": true
+    },
+    {
+      "i": 73,
+      "liver_dice": 0.961863173216885,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9860076904296875,
+      "has_tumor": true
+    },
+    {
+      "i": 74,
+      "liver_dice": 0.9595653372180007,
+      "tumor_dice": 0.2318840579710145,
+      "hd95": 8.06225774829855,
+      "assd": 4.704347764095195,
+      "pixel_acc": 0.9843292236328125,
+      "has_tumor": true
+    },
+    {
+      "i": 75,
+      "liver_dice": 0.9757850044324173,
+      "tumor_dice": 0.8638132295719845,
+      "hd95": 4.0,
+      "assd": 1.8685658220372716,
+      "pixel_acc": 0.9920806884765625,
+      "has_tumor": true
+    },
+    {
+      "i": 76,
+      "liver_dice": 0.925276453986027,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9753570556640625,
+      "has_tumor": false
+    },
+    {
+      "i": 77,
+      "liver_dice": 0.960572178715314,
+      "tumor_dice": 0.8480565371024735,
+      "hd95": 2.5026295937606715,
+      "assd": 0.9898767476142072,
+      "pixel_acc": 0.9864654541015625,
+      "has_tumor": true
+    },
+    {
+      "i": 78,
+      "liver_dice": 0.9637992831541219,
+      "tumor_dice": 0.0,
+      "hd95": 113.6892578690274,
+      "assd": 107.07180524523751,
+      "pixel_acc": 0.987457275390625,
+      "has_tumor": true
+    },
+    {
+      "i": 79,
+      "liver_dice": 0.9776747146819442,
+      "tumor_dice": 0.7266666666666667,
+      "hd95": 79.17237567286412,
+      "assd": 14.390593226972015,
+      "pixel_acc": 0.9917449951171875,
+      "has_tumor": true
+    },
+    {
+      "i": 80,
+      "liver_dice": 0.9541245069456354,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98297119140625,
+      "has_tumor": true
+    },
+    {
+      "i": 81,
+      "liver_dice": 0.9766520914115997,
+      "tumor_dice": 0.6627906976744186,
+      "hd95": 3.1622776601683795,
+      "assd": 1.6649893622163903,
+      "pixel_acc": 0.991363525390625,
+      "has_tumor": true
+    },
+    {
+      "i": 82,
+      "liver_dice": 0.9775874256725852,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9917755126953125,
+      "has_tumor": true
+    },
+    {
+      "i": 83,
+      "liver_dice": 0.9432960209167416,
+      "tumor_dice": 0.20675944333996024,
+      "hd95": 68.55579311334748,
+      "assd": 29.3373310409473,
+      "pixel_acc": 0.978790283203125,
+      "has_tumor": true
+    },
+    {
+      "i": 84,
+      "liver_dice": 0.9227120535714286,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.974639892578125,
+      "has_tumor": true
+    },
+    {
+      "i": 85,
+      "liver_dice": 0.94344851476574,
+      "tumor_dice": 0.7811320754716982,
+      "hd95": 54.56189146281496,
+      "assd": 12.90028587800285,
+      "pixel_acc": 0.980072021484375,
+      "has_tumor": true
+    },
+    {
+      "i": 86,
+      "liver_dice": 0.9536054591603212,
+      "tumor_dice": 0.9420035149384886,
+      "hd95": 1.4142135623730951,
+      "assd": 0.5497897339176939,
+      "pixel_acc": 0.9829864501953125,
+      "has_tumor": true
+    },
+    {
+      "i": 87,
+      "liver_dice": 0.8891565148918431,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9634857177734375,
+      "has_tumor": true
+    },
+    {
+      "i": 88,
+      "liver_dice": 0.9664807276747576,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9898223876953125,
+      "has_tumor": true
+    },
+    {
+      "i": 89,
+      "liver_dice": 0.9548494983277592,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.98516845703125,
+      "has_tumor": true
+    },
+    {
+      "i": 90,
+      "liver_dice": 0.9659404179635394,
+      "tumor_dice": 0.6973365617433414,
+      "hd95": 3.605551275463989,
+      "assd": 2.321641709809441,
+      "pixel_acc": 0.988311767578125,
+      "has_tumor": true
+    },
+    {
+      "i": 91,
+      "liver_dice": 0.94938276537094,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.9781036376953125,
+      "has_tumor": true
+    },
+    {
+      "i": 92,
+      "liver_dice": 0.964585431352803,
+      "tumor_dice": 0.7511961722488039,
+      "hd95": 3.0,
+      "assd": 1.375710991215148,
+      "pixel_acc": 0.98712158203125,
+      "has_tumor": true
+    },
+    {
+      "i": 93,
+      "liver_dice": 0.9418636488089805,
+      "tumor_dice": 0.0,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.980560302734375,
+      "has_tumor": true
+    },
+    {
+      "i": 94,
+      "liver_dice": 0.9567319716548562,
+      "tumor_dice": null,
+      "hd95": null,
+      "assd": null,
+      "pixel_acc": 0.984161376953125,
+      "has_tumor": false
+    },
+    {
+      "i": 95,
+      "liver_dice": 0.9658393280855712,
+      "tumor_dice": 0.6387096774193548,
+      "hd95": 4.0,
+      "assd": 2.515507062969372,
+      "pixel_acc": 0.9861602783203125,
+      "has_tumor": true
+    },
+    {
+      "i": 96,
+      "liver_dice": 0.9665506147811908,
+      "tumor_dice": 0.8674033149171271,
+      "hd95": 2.23606797749979,
+      "assd": 0.9747983367332145,
+      "pixel_acc": 0.9884185791015625,
+      "has_tumor": true
+    },
+    {
+      "i": 97,
+      "liver_dice": 0.9605240174672489,
+      "tumor_dice": 0.39344262295081966,
+      "hd95": 6.677695962992717,
+      "assd": 2.7528269590726655,
+      "pixel_acc": 0.9862060546875,
+      "has_tumor": true
+    },
+    {
+      "i": 98,
+      "liver_dice": 0.9775138271828815,
+      "tumor_dice": 0.9484936831875608,
+      "hd95": 2.0,
+      "assd": 0.655630654598374,
+      "pixel_acc": 0.992431640625,
+      "has_tumor": true
+    },
+    {
+      "i": 99,
+      "liver_dice": 0.9612933181376894,
+      "tumor_dice": 0.9565217391304348,
+      "hd95": 1.0,
+      "assd": 0.4696077659044762,
+      "pixel_acc": 0.9860076904296875,
+      "has_tumor": true
+    }
+  ],
+  "pp_changes": {
+    "strong_before": 0.7110246098626316,
+    "strong_after": 0.7102025740419812,
+    "weak_before": 0.291822990519875,
+    "weak_after": 0.27577230659811486,
+    "weak_liver_before": 0.9574694875586115,
+    "weak_liver_after": 0.9821402625342244
+  },
+  "mid_case": 93
+}

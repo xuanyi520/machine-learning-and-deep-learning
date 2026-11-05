@@ -1,0 +1,18 @@
+=== C3 梯度累积 ===
+eval 模式：梯度相对误差 = 3.002e+00
+train 模式（BN 统计量不同）：梯度相对误差 = 3.277e+00
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_accum.json
+
+=== C4 BN vs GroupNorm（BloodMNIST 3000）===
+  BN  bs= 2  acc=0.8690  (21s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json
+  BN  bs= 8  acc=0.8752  (4s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json
+  BN  bs=32  acc=0.8670  (2s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json
+  GN  bs= 2  acc=0.8661  (39s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json
+  GN  bs= 8  acc=0.8334  (14s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json
+  GN  bs=32  acc=0.8524  (2s)
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\c_bn_gn.json

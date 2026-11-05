@@ -1,0 +1,12 @@
+=== n=496 ===
+  scratch      acc=0.6995
+  head_only    acc=0.4338
+  partial_l4   acc=0.7428
+  full_diff    acc=0.7059
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a5_sweep64.json
+=== n=2000 ===
+  scratch      acc=0.8834
+  head_only    acc=0.6823
+  partial_l4   acc=0.8278
+  full_diff    acc=0.8264
+saved E:\AI学习\模块10_迁移学习与训练技巧\_exp\results\a5_sweep64.json
