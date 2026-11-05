@@ -1,0 +1,79 @@
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\utils\validation.py:2830: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+E:\Dowmload\Anaconda3_Dowmload\envs\ai\Lib\site-packages\sklearn\svm\_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+============================================================
+练习 9-F  给医生写解释（手写 permutation SHAP）
+============================================================
+真实死亡且 OOF 预测 >0.8 的病人: 1 个，索引 [100]
+选中病人 #100，真实 y=1，OOF 预测 p=0.847
+
+base=0.2062  预测=0.9367  加性误差=0.0013
+
+贡献最大的 8 个特征（概率单位）
+  Protime          取值     31.0  SHAP +0.1417
+  Bilirubin        取值      4.8  SHAP +0.1232
+  Albumin          取值      2.7  SHAP +0.1126
+  Ascites          取值      1.0  SHAP +0.0955
+  Varices          取值      1.0  SHAP +0.0732
+  Spiders          取值      1.0  SHAP +0.0367
+  Age              取值     48.0  SHAP +0.0311
+  Histology        取值      2.0  SHAP +0.0308
+
+前 5 项合计 +0.5463；其余 +0.1830；base + 全部 = 0.9354
+
+============================================================
+练习 9-G  两个模型到底谁好
+============================================================
+seed=0: LR 0.8249  RF 0.8728
+seed=1: LR 0.8305  RF 0.8788
+seed=2: LR 0.8272  RF 0.8812
+seed=3: LR 0.8567  RF 0.9015
+seed=4: LR 0.8323  RF 0.8786
+seed=5: LR 0.7990  RF 0.8683
+seed=6: LR 0.8206  RF 0.8955
+seed=7: LR 0.8465  RF 0.8806
+seed=8: LR 0.8293  RF 0.8783
+seed=9: LR 0.7970  RF 0.8697
+
+LR 10 种子: 0.8264 ± 0.0184
+RF 10 种子: 0.8805 ± 0.0106
+LR OOF AUC 0.8450，95% CI 0.7503-0.9159
+RF OOF AUC 0.8768，95% CI 0.8081-0.9319
+
+配对 t: LR [0.953 0.873 0.813 0.804 0.821]
+        RF [0.96  0.883 0.89  0.818 0.815]
+        t=1.413, p=0.2304, 平均差=+0.0205
+
+DeLong RF vs LR: AUC 0.8768 vs 0.8450, z=1.432, p=0.1522
+自检 RF vs RF: (np.float64(0.8767784552845529), np.float64(0.8767784552845529), 0.0, 1.0)
+sklearn AUC 校验: 0.876778455285
+LR   OOF AUC 0.8450
+RF   OOF AUC 0.8768
+DT3  OOF AUC 0.6639
+KNN  OOF AUC 0.8631
+SVM  OOF AUC 0.8463
+GB   OOF AUC 0.7782
+
+共 15 对比较，Bonferroni 阈值 0.0033
+比较             AUC1   AUC2       z        p     BH q   Bonf
+LR vs RF      0.845  0.877   -1.43   0.1522   0.2075      否
+LR vs DT3     0.845  0.664    2.66   0.0079   0.0236      否
+LR vs KNN     0.845  0.863   -0.95   0.3409   0.3652      否
+LR vs SVM     0.845  0.846   -0.07   0.9409   0.9409      否
+LR vs GB      0.845  0.778    1.87   0.0610   0.1144      否
+RF vs DT3     0.877  0.664    3.49   0.0005   0.0064      是
+RF vs KNN     0.877  0.863    0.96   0.3355   0.3652      否
+RF vs SVM     0.877  0.846    1.51   0.1300   0.1950      否
+RF vs GB      0.877  0.778    3.34   0.0008   0.0064      是
+DT3 vs KNN    0.664  0.863   -3.10   0.0020   0.0098      是
+DT3 vs SVM    0.664  0.846   -2.74   0.0061   0.0230      否
+DT3 vs GB     0.664  0.778   -1.63   0.1041   0.1734      否
+KNN vs SVM    0.863  0.846    0.98   0.3285   0.3652      否
+KNN vs GB     0.863  0.778    2.59   0.0095   0.0237      否
+SVM vs GB     0.846  0.778    2.18   0.0292   0.0625      否
+原始 p<0.05: 7 对；BH q<0.05: 6 对；Bonferroni: 3 对

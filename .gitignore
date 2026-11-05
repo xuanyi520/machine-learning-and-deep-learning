@@ -37,3 +37,11 @@ desktop.ini
 # 临时脚本
 _tmp_*
 tmp_*
+
+# 答案验证运行时产物
+模块*_*/_ans_run/*.npz
+模块*_*/_ans_run/*.pt
+参考答案/figs/*.npz
+模块*_*/code/multirun/
+模块*_*/code/outputs/
+模块*_*/code/*.pt
