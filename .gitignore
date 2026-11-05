@@ -33,3 +33,7 @@ desktop.ini
 模块15_工程化与部署/dvc_demo/
 模块*_*/code/outputs/
 模块*_*/code/*.onnx
+
+# 临时脚本
+_tmp_*
+tmp_*
