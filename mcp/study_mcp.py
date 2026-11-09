@@ -128,16 +128,31 @@ def list_debts() -> str:
     if not m:
         return "进度追踪.md 里没找到「欠账清单」小节。"
     rows = [l for l in m.group(1).splitlines() if l.strip().startswith("|")]
-    debts = []
+    debts, done = [], []
     for r in rows:
         cells = [c.strip() for c in r.strip("|").split("|")]
         if len(cells) >= 5 and cells[0].isdigit():
             status = cells[-1]
-            if "☐" in status or (not status.startswith("☑") and "x" not in status.lower()):
-                debts.append(f"[{cells[0]}] {cells[1]}　起始 {cells[2]}　挂了 {cells[3]}")
-    if not debts:
-        return "欠账清单已全部清零。"
-    return "未完成欠账：\n" + "\n".join(debts)
+            # 认这几种「已完成」标记：✅ ☑ [x]
+            finished = (
+                status.startswith("✅")
+                or status.startswith("☑")
+                or status.startswith("[x]")
+            )
+            line = f"[{cells[0]}] {cells[1]}　起始 {cells[2]}　挂了 {cells[3]}"
+            if finished:
+                done.append(line)
+            else:
+                debts.append(line)
+
+    parts = []
+    if debts:
+        parts.append("未完成欠账：\n" + "\n".join(debts))
+    else:
+        parts.append("欠账清单已全部清零。")
+    if done:
+        parts.append(f"\n已清账 {len(done)} 条：\n" + "\n".join(done))
+    return "\n".join(parts)
 
 
 # ============ 4. 教材检索 ============
