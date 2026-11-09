@@ -860,7 +860,7 @@ transform_B = transforms.Compose([transforms.ToTensor(),
 
 <details>
 <summary>看答案</summary>
-
+DICOM 是"图像 + 元数据"，带患者信息、扫描参数、物理尺寸等；普通图片只有像素
 1. **像素值有物理意义**：JPG 是亮度，DICOM 是 HU（组织密度）
 2. **尺寸有物理单位**：JPG 是像素，DICOM 靠 PixelSpacing 换算成毫米
 3. **一个文件不是一张图**：JPG 一个文件一张完整图，DICOM 一个文件是一层，几百个文件才是一次检查

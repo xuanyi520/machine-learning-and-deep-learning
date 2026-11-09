@@ -45,3 +45,9 @@ tmp_*
 模块*_*/code/multirun/
 模块*_*/code/outputs/
 模块*_*/code/*.pt
+
+# 外部参考仓库（体积大，本地下载，不进 git）
+参考仓库/
+
+# 临时脚本
+_tmp_*.py
